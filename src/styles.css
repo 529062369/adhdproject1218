@@ -1,0 +1,114 @@
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  width: 72px;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reader {
+  margin-top: 18px;
+}
+
+.reader h1 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 8px 0;
+}
+
+.reader .authors {
+  margin: 0 0 14px 0;
+  color: var(--muted);
+}
+
+.reader h2 {
+  font-size: 16px;
+  margin: 20px 0 8px;
+}
+
+.reader p {
+  margin: 0 0 12px 0;
+  line-height: 1.75;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.reader strong {
+  font-weight: 700;
+}
+
+.noteBox {
+  border-left: 3px solid var(--border);
+  padding-left: 12px;
+}
+
